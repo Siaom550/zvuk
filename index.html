@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ZŠ Jozefa Ligoša Chlebnice">
+    <title>ZŠ Jozefa Ligoša Chlebnice</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">ZŠ Jozefa Ligoša</div>
+        <nav>
+            <ul>
+                <li><a href="pisomne_zaznami/">Písomné záznami</a>
+                <li><a href="zvukove_zaznami/">Zvukové záznami</a></li>
+                <li><a href="profil/">Profil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>ZŠ Jozefa Ligoša</h1>
+    <div class="jedna">
+        <p>Toto sú záznamy zo školy ZŠ Jozefa Ligoša <a href="https://maps.app.goo.gl/QGnJoZ9vfTNDf6W59"
+                target="_blank">(Chlebnice)</a></p>
+    </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyAhryMH2hFuclr3lZSHJyZaLbQrWZmTl9s",
+            authDomain: "zsjligosa.firebaseapp.com",
+            projectId: "zsjligosa",
+            storageBucket: "zsjligosa.firebasestorage.app",
+            messagingSenderId: "900925013058",
+            appId: "1:900925013058:web:9fe29faa1833ff20ae41db",
+            measurementId: "G-29QJLCN5LQ"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
+</body>
+<footer>
+    <p>Rok vydania - 2025</p>
+</footer>
+
+</html>
